@@ -1,0 +1,1 @@
+laravel-bug-report-config
