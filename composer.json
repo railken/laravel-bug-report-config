@@ -1,0 +1,14 @@
+{
+    "require": {
+        "laravel/framework": "6.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "orchestra/testbench": "*"
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "Tests\\": "tests/" 
+        }
+    }
+}
