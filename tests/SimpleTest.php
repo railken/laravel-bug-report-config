@@ -29,7 +29,7 @@ class SimpleTest extends \Orchestra\Testbench\TestCase
 
         unset($cfg->all()['foo']);
 
-        $this->assertEquals(7, $cfg->get('foo', 7)); // fails, $cfg->get('foo') return null
+        $this->assertEquals(7, $cfg->get('foo', 7)); // fails, $cfg->get('foo') return null instead of 7
     }
 
     public function testConfigWithoffsetUnset()
@@ -43,7 +43,7 @@ class SimpleTest extends \Orchestra\Testbench\TestCase
 
         $cfg->offsetUnset('foo');
 
-        $this->assertEquals(7, $cfg->get('foo', 7)); // fails, $cfg->get('foo') return null
+        $this->assertEquals(7, $cfg->get('foo', 7)); // fails, $cfg->get('foo')  return null instead of 7
     }
 
     
